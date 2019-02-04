@@ -9,16 +9,18 @@ class SearchBar extends Component { //클래스형 컴포넌트는 상태변화�
   }
   render(){
     return(
-      <div>
+      <div className="search-bar">
         <input 
           value={this.state.term}
-          onChange={event => this.setState({term: event.target.value})}
+          onChange={event => this.onInputChange(event.target.value)}
         />
-
       </div>
     );
   }
-
+  onInputChange(term){
+    this.setState({term});
+    this.props.onSearchTermChange(term);
+  }//직접 바꾸기 때문에 props사용.
 
 }//React.Component의 모든기능을 제공받자.
 
