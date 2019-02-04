@@ -11,7 +11,7 @@ import VideoDetail from './components/video_detail';
 import _ from 'lodash'; // lodash에서 debounce 메소드 함수 호출시기 조절
 
 
-const API_KEY = 'AIzaSyAlq5xewgTsoRPkRfqO7gR4udw21Ptg_FQ'
+const API_KEY ;//자신의 api적기(google api(youtube))
 
 class App extends Component{
   constructor(props){
